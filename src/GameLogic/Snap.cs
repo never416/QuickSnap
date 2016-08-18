@@ -142,12 +142,16 @@ namespace CardGames.GameLogic
 				 IsStarted && 								// and the game is started
 				 _topCards [0] != null && _topCards [0].Rank == _topCards [1].Rank) // and its a match
 			{
+				SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
 				_score[player]++;
-				//_gameTimer.Stop ();
+				SwinGame.PlaySoundEffect ("Slap");
+				//_gameTime.Stop();
 			}
 			else if ( player >= 0 && player < _score.Length)
 			{
+				SwinGame.LoadSoundEffectNamed ("Error", "error.wav");
 				_score[player]--;
+				SwinGame.PlaySoundEffect ("Error");
 			}
 
 			// stop the game...
