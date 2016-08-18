@@ -91,15 +91,8 @@ namespace CardGames.GameLogic
 			{
 				_started = true;
 				_deck.Shuffle ();		// Return the cards and shuffle
-
-<<<<<<< Updated upstream
 				FlipNextCard ();
 				_gameTimer.Start ();
-				// Flip the first card...
-=======
-				FlipNextCard ();        // Flip the first card...
-				_gameTimer.Start();
->>>>>>> Stashed changes
 			}
 		}
 			
