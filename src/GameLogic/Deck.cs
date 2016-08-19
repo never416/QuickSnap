@@ -66,7 +66,7 @@ namespace CardGames.GameLogic
 				_cards [i] = _cards [i + rndIdx];
 				_cards [i + rndIdx] = temp;
 			}
-			_topCard = 0;
+			_topCard = 0; // Rip Harambe 2016
 		}
         
 		/// <summary>
